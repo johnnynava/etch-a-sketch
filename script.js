@@ -5,3 +5,8 @@ for (let i=0; i<256; i++){
     gridSquare.classList.add("gridSquare");
     grid.appendChild(gridSquare);   
 }
+
+const gridSquare = document.querySelectorAll("div.gridSquare");
+gridSquare.forEach(grid => grid.addEventListener("mouseenter", function(e){
+    grid.classList.add("gridHover");
+}));
