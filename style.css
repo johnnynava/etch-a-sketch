@@ -5,13 +5,15 @@
 }
 
 .gridSquare {
-    width: 40px;
-    height: 40px;
-    border: 1px solid lightgrey;
-    margin-right: -1px;
-    margin-bottom: -1px;
+    border: 0.5px solid lightgrey;
 }
 
 .gridHover {
     background-color: darkblue;
 }
+
+/* 
+input 16 -------> configuro
+square = (660/input) - 2
+*/
+
