@@ -3,12 +3,16 @@ const input = document.querySelector("input");
 const reset = document.querySelector("button#reset");
 const random = document.querySelector("button#random");
 let gridSquares = document.querySelectorAll("div.gridSquare");
+let singleGridSquare = document.querySelector("div.gridSquare");
 let gridSizeText = document.querySelector("div#gridSizeText");
 let isMouseDown = false;
 let gridSize = 16;
+let toggleValue = false;
 
-// reset.addEventListener("click", function(e){
-// })
+reset.addEventListener("click", function(e){
+    grid.innerHTML = "";
+    gridConstruction(gridSize);
+});
 
 input.addEventListener("click", function(e){
     grid.innerHTML = "";
@@ -44,8 +48,3 @@ function gridConstruction(gridSize){
 };
 
 gridConstruction(gridSize);
-
-
-
-
-
